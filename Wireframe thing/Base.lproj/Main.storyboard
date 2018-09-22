@@ -109,7 +109,7 @@
             </objects>
             <point key="canvasLocation" x="1252" y="116"/>
         </scene>
-        <!--Item 2-->
+        <!--To-do-->
         <scene sceneID="Sum-tB-oPR">
             <objects>
                 <viewController id="gFD-TF-AL4" sceneMemberID="viewController">
@@ -119,13 +119,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Aat-eF-JtU"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="vFs-F0-XQc"/>
+                    <tabBarItem key="tabBarItem" title="To-do" id="vFs-F0-XQc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mAg-8L-WpO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2822" y="1067"/>
+            <point key="canvasLocation" x="4404" y="599"/>
         </scene>
-        <!--Item 1-->
+        <!--Dashboard-->
         <scene sceneID="gqC-y2-Cy3">
             <objects>
                 <viewController id="bJn-gp-xO2" sceneMemberID="viewController">
@@ -135,11 +135,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="07K-Pe-ABk"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="RnQ-52-45Z"/>
+                    <tabBarItem key="tabBarItem" title="Dashboard" id="RnQ-52-45Z"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vz1-0S-zDu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2822" y="402"/>
+            <point key="canvasLocation" x="3489" y="599"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="o9z-ol-FAq">
@@ -153,11 +153,12 @@
                     <connections>
                         <segue destination="bJn-gp-xO2" kind="relationship" relationship="viewControllers" id="6Lf-OT-MgE"/>
                         <segue destination="gFD-TF-AL4" kind="relationship" relationship="viewControllers" id="YLa-iO-mJC"/>
+                        <segue destination="eCj-AO-00D" kind="relationship" relationship="viewControllers" id="uSJ-D1-pWZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ev1-db-Wzt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1252" y="986"/>
+            <point key="canvasLocation" x="2407" y="600"/>
         </scene>
         <!--Attendance-->
         <scene sceneID="PwF-zg-Wub">
@@ -173,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ReR-8M-wr6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3530" y="-1207"/>
+            <point key="canvasLocation" x="4548" y="-231"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="KdF-19-x3c">
@@ -189,7 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T3S-OW-nes" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2658" y="-1208"/>
+            <point key="canvasLocation" x="3676" y="-232"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="d7A-lu-sVp">
@@ -210,7 +211,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xWw-MZ-QA0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1252" y="-874"/>
+            <point key="canvasLocation" x="2407" y="-232"/>
         </scene>
         <!--To-do-->
         <scene sceneID="B2t-xS-3Kp">
@@ -226,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iEe-Qa-PfH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4482" y="-1208"/>
+            <point key="canvasLocation" x="5481" y="-232"/>
         </scene>
         <!--My Class-->
         <scene sceneID="wwA-Fy-b32">
@@ -242,9 +243,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yVe-po-UXO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5294" y="-1209"/>
+            <point key="canvasLocation" x="6313" y="-233"/>
         </scene>
-        <!--Settings-->
+        <!--View Controller-->
         <scene sceneID="bYr-Kb-kqg">
             <objects>
                 <viewController id="zKe-e1-Slf" sceneMemberID="viewController">
@@ -254,11 +255,27 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Lqo-Aj-cI8"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" id="LYp-yy-5OQ"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="LYp-yy-5OQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LNQ-24-0Go" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6058" y="-1208"/>
+            <point key="canvasLocation" x="7314" y="-231"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cDu-4h-0xt">
+            <objects>
+                <viewController id="eCj-AO-00D" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yUw-nj-z2E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="CST-Si-TPF"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="trd-0z-vDa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pTo-nl-mMd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5377" y="598"/>
         </scene>
     </scenes>
 </document>
