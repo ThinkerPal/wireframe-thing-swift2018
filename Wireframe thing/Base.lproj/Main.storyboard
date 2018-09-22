@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.15" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.9"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -116,14 +115,52 @@
                     <view key="view" contentMode="scaleToFill" id="fZ9-gQ-lz8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hyX-rj-Xs7">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="GbA-SN-nxQ" detailTextLabel="pIG-IO-TWF" style="IBUITableViewCellStyleSubtitle" id="nlp-W5-7Tz">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nlp-W5-7Tz" id="oHs-4B-vob">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GbA-SN-nxQ">
+                                                    <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pIG-IO-TWF">
+                                                    <rect key="frame" x="15" y="25.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hyX-rj-Xs7" firstAttribute="leading" secondItem="Aat-eF-JtU" secondAttribute="leading" id="341-la-f8s"/>
+                            <constraint firstItem="Aat-eF-JtU" firstAttribute="bottom" secondItem="hyX-rj-Xs7" secondAttribute="bottom" id="UaH-zq-FMi"/>
+                            <constraint firstItem="hyX-rj-Xs7" firstAttribute="top" secondItem="Aat-eF-JtU" secondAttribute="top" id="Y8p-Tl-9Io"/>
+                            <constraint firstItem="Aat-eF-JtU" firstAttribute="trailing" secondItem="hyX-rj-Xs7" secondAttribute="trailing" id="fLi-I6-FgH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Aat-eF-JtU"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="To-do" id="vFs-F0-XQc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mAg-8L-WpO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4404" y="599"/>
+            <point key="canvasLocation" x="4404" y="1507"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="gqC-y2-Cy3">
@@ -139,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vz1-0S-zDu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3489" y="599"/>
+            <point key="canvasLocation" x="3489" y="1507"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="o9z-ol-FAq">
@@ -158,7 +195,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ev1-db-Wzt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2407" y="600"/>
+            <point key="canvasLocation" x="2406" y="1508"/>
         </scene>
         <!--Attendance -->
         <scene sceneID="PwF-zg-Wub">
@@ -174,7 +211,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ReR-8M-wr6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4276" y="-132"/>
+            <point key="canvasLocation" x="4036" y="742"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="KdF-19-x3c">
@@ -210,7 +247,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T3S-OW-nes" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4276" y="-836.13193403298362"/>
+            <point key="canvasLocation" x="4202" y="-1613"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="d7A-lu-sVp">
@@ -247,7 +284,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iEe-Qa-PfH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6380" y="-836"/>
+            <point key="canvasLocation" x="5908" y="-1239"/>
         </scene>
         <!--My Classes-->
         <scene sceneID="wwA-Fy-b32">
@@ -263,7 +300,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yVe-po-UXO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6380" y="-146.17691154422789"/>
+            <point key="canvasLocation" x="5343" y="59"/>
         </scene>
         <!--Settings-->
         <scene sceneID="bYr-Kb-kqg">
@@ -286,7 +323,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LNQ-24-0Go" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8232.7999999999993" y="-538.38080959520244"/>
+            <point key="canvasLocation" x="6986" y="-501"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cDu-4h-0xt">
@@ -302,7 +339,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTo-nl-mMd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5377" y="598"/>
+            <point key="canvasLocation" x="5377" y="1506"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="MKa-zQ-IqF">
@@ -321,7 +358,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XCz-Lq-an3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3336.8000000000002" y="-836.13193403298362"/>
+            <point key="canvasLocation" x="3263" y="-1613"/>
         </scene>
         <!--Attendance-->
         <scene sceneID="ALd-Pb-hwN">
@@ -340,7 +377,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ufi-vl-K6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3337" y="-132"/>
+            <point key="canvasLocation" x="3097" y="742"/>
         </scene>
         <!--To-do-->
         <scene sceneID="A0b-Qm-99h">
@@ -359,7 +396,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kID-gm-N3F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5441" y="-836"/>
+            <point key="canvasLocation" x="4969" y="-1239"/>
         </scene>
         <!--Classes-->
         <scene sceneID="SXF-N1-G4o">
@@ -378,7 +415,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6pt-tY-QOH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5440.8000000000002" y="-146.17691154422789"/>
+            <point key="canvasLocation" x="4404" y="59"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sEi-W5-Lbz">
@@ -397,7 +434,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jiq-g8-xju" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7295" y="-539"/>
+            <point key="canvasLocation" x="6047" y="-502"/>
         </scene>
     </scenes>
 </document>
